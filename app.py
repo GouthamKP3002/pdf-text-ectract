@@ -351,6 +351,8 @@ def extract_batch():
             "error": f"Batch processing error: {str(e)}"
         }), 500
 
+app = app
+
 if __name__ == '__main__':
     # For development
     app.run(debug=True, host='0.0.0.0', port=5000)
